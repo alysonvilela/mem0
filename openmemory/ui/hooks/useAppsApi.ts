@@ -69,6 +69,8 @@ export const useAppsApi = (): UseAppsApiReturn => {
 
   const URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8765";
 
+  console.log({URL})
+
   const fetchApps = useCallback(async (params: FetchAppsParams = {}): Promise<{ apps: App[], total: number }> => {
     const {
       name,
