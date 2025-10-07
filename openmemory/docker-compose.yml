@@ -29,6 +29,7 @@ services:
     environment:
       - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
       - NEXT_PUBLIC_USER_ID=${USER}
+      - PORT=${UI_PORT}
 
 volumes:
   mem0_storage:
