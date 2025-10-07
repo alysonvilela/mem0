@@ -35,6 +35,5 @@ services:
       - PORT=${UI_PORT}
       - OPENAI_API_KEY=${OPENAI_API_KEY}
 
-      
 volumes:
   mem0_storage:
