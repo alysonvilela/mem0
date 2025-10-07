@@ -27,7 +27,7 @@ services:
         PORT: ${UI_PORT}
     image: mem0/openmemory-ui:latest
     ports:
-      - "3000:3000"
+      - "${UI_PORT}:${UI_PORT}"
     environment:
       - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
       - NEXT_PUBLIC_USER_ID=${USER}
