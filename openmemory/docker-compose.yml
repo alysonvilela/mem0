@@ -8,11 +8,11 @@ services:
   openmemory-mcp:
     image: mem0/openmemory-mcp
     build: api/
-    environment:
-      - USER
-      - API_KEY
     env_file:
       - api/.env
+    environment:
+      - USER=${USER}
+      - API_KEY=${API_KEY}
     depends_on:
       - mem0_store
     ports:
