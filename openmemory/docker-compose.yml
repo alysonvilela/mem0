@@ -23,13 +23,14 @@ services:
     build:
       context: ui/
       dockerfile: Dockerfile
+      args:
+        UI_PORT: ${UI_PORT}
     image: mem0/openmemory-ui:latest
     ports:
       - "3000:3000"
     environment:
       - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
       - NEXT_PUBLIC_USER_ID=${USER}
-      - PORT=${UI_PORT}
 
 volumes:
   mem0_storage:
