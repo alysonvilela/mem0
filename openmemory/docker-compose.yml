@@ -24,7 +24,7 @@ services:
       context: ui/
       dockerfile: Dockerfile
       args:
-        UI_PORT: ${UI_PORT}
+        PORT: ${UI_PORT}
     image: mem0/openmemory-ui:latest
     ports:
       - "3000:3000"
