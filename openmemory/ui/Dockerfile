@@ -44,10 +44,10 @@ RUN chmod +x /home/nextjs/entrypoint.sh
 
 USER nextjs
 
-ARG UI_PORT
+ARG PORT
 
-EXPOSE UI_PORT
-ENV PORT=${UI_PORT}
+EXPOSE PORT
+ENV PORT=${PORT}
 ENV HOSTNAME="0.0.0.0"
 
 ENTRYPOINT ["/home/nextjs/entrypoint.sh"]
