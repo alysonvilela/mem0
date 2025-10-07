@@ -11,6 +11,7 @@ services:
     environment:
       - USER=${USER}
       - API_KEY=${API_KEY}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
     depends_on:
       - mem0_store
     ports:
